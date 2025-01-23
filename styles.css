@@ -3,6 +3,8 @@
     --cor-fundo: #211727;
     --cor-rosa: #FD7BF0;
     --cor-cinza: #888888;
+    --cor-cinza-claro: #E7E5E5;
+    --cor-branca: #E1E1E1;
     --fonte-primaria: "Prompt", sans-serif;
 }
 
@@ -34,7 +36,6 @@ body {
 .menu-lateral {
     background-color: var(--cor-fundo);
     border-radius: 10px;
-    height: 100%;
     padding: 40px 16px;
     text-align: center;
 }
@@ -73,4 +74,177 @@ body {
     border: 1px solid var(--cor-rosa);
     padding: 12px 16px;
     border-radius: 8px;
+}
+
+main {
+    display: flex;
+    background-color: var(--cor-fundo);
+    border-radius: 8px;
+    padding: 24px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 26px;
+    color: var(--cor-branca);
+}
+
+#upload-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.botao-upload {
+    margin: 16px 0 8px 0;
+    background-color: var(--cor-fundo);
+    border: 1px solid var(--cor-cinza);
+    border-radius: 8px;
+    color: var(--cor-cinza);
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+    cursor: pointer;
+}
+
+.botao-upload::after {
+    content: "";
+    width: 100%;
+    background-image: url("/img/upload.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 8px;
+    margin-left: 200px;
+}
+
+.container-imagem-nome {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.imagem-gato {
+    background-color: var(--cor-cinza-claro);
+    border-radius: 8px;
+    padding:24px 2px 0px 2px;
+}
+
+.container-descricao label {
+    display: flex;
+    flex-direction: column;
+    color: var(--cor-cinza-claro);
+}
+
+.container-descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0px 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+form div input, textarea {
+    width: 100%;
+    padding: 8px 16px;
+    background-color: var(--cor-cinza-claro);
+    border: none;
+    border-radius: 4px;
+    font-family: var(--fonte-primaria);
+    line-height: 22.5px;
+}
+
+form div input {
+    height: 39px;
+}
+
+textarea {
+    height: 161px;
+}
+
+.lista-tags li {
+    display: flex;
+    background-color: var(--cor-cinza-claro);
+    color: var(--cor-fundo);
+    gap: 10px;
+    padding: 4px 8px;
+    border-radius: 4px;   
+    align-items: center;
+}
+
+.lista-tags {
+    display: flex;
+}
+
+.container-itens-botoes {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.container-itens-botoes button {
+    width: 50%;
+    padding: 12px 32px 12px 12px;
+    text-align: center;
+    border-radius: 8px;
+    font-family: var(--fonte-primaria);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.botao-descartar {
+    background-color: var(--cor-fundo);
+    color: var(--cor-rosa);
+    border: 1px solid var(--cor-rosa);
+    position: relative;
+    cursor: pointer;
+}
+
+.botao-descartar::after {
+    content: "";
+    background-image: url("/img/Lixeiro.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 8px;
+}
+
+.botao-publicar {
+    background-color: var(--cor-rosa);
+    color: var(--cor-fundo);
+    border: 1px solid var(--cor-rosa);
+    position: relative;
+    cursor: pointer;
+}
+
+.botao-publicar::after {
+    content: "";
+    background-image: url("/img/arrow_forward.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 8px;
 }

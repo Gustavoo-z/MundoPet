@@ -132,10 +132,11 @@ h2 {
     gap: 8px;
 }
 
-.imagem-gato {
+.main-imagem {
     background-color: var(--cor-cinza-claro);
     border-radius: 8px;
-    padding:24px 2px 0px 2px;
+    padding:16px 16px 16px 16px;
+    max-width: 400px;
 }
 
 .container-descricao label {

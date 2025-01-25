@@ -81,6 +81,7 @@ main {
     background-color: var(--cor-fundo);
     border-radius: 8px;
     padding: 24px;
+    max-width: 900px;
 }
 
 h2 {
@@ -188,6 +189,12 @@ textarea {
 
 .lista-tags {
     display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.remove-tag {
+    cursor: pointer;
 }
 
 .container-itens-botoes {
